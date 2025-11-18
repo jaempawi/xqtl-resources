@@ -153,6 +153,7 @@ variant_gene_summary:
         - xqtl_only_MSBB_colocboost_export_release_sorted.bed.gz
         - xqtl_only_KNIGHT_colocboost_export_release_sorted.bed.gz
         - xqtl_only_MIGA_colocboost_export_release_sorted.bed.gz
+        - xqtl_only_colocboost_export_filtered.bed.gz
       pairwise_colocalization:
         bulk_mQTL_haQTL_AD:
           - bulk_fsusie_AD_coloc_export_filtered.bed.gz
