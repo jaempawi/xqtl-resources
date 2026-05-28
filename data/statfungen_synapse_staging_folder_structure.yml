@@ -198,6 +198,7 @@ variant_gene_summary: #syn69865684
         - xqtl_only_MSBB_colocboost_sorted.bed.gz
         - xqtl_only_KNIGHT_colocboost_sorted.bed.gz
         - xqtl_only_MIGA_colocboost_sorted.bed.gz
+        - xqtl_only_colocboost_filtered.bed.gz
       pairwise_colocalization: #syn69865800
         bulk_mQTL_haQTL_AD: #syn69865801
           - bulk_fsusie_AD_coloc_filtered.bed.gz
