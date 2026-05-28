@@ -565,7 +565,7 @@ reference_files: #syn69670634
         frq: #syn75157506
           - 1000G_EUR.hg38.{1..22}.frq
         hm3_print_snp: #syn75157509
-          baselineLD_v2.2: #syn75157510
+          baseline_ldscores_v2.2: #syn75157510
             - baselineLD.{1..22}.log
             - baselineLD.{1..22}.l2.ldscore.gz
             - baselineLD.{1..22}.l2.M_5_50
