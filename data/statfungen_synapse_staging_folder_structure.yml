@@ -597,11 +597,6 @@ reference_files: #syn69670634
          - ADSP_R4.EUR.chr{1..22}.psam
          - ADSP_R4.EUR.chr{1..22}.afreq
   sLDSC_reference_data: #syn75157484
-    gwas_sumstats: #syn75157485
-      reference_sumstats_parquet: #syn75157492
-        - *.sumstats.parquet
-      traits_group: #syn75157493
-        - sumstats_*.txt
     hm3_snplist: #syn75157488
         - hm3_snp_list.txt
     reference_panel: #syn75157489
