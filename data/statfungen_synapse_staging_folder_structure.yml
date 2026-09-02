@@ -397,8 +397,16 @@ xQTL_GWAS_models: #syn69670588
           fine_mapping:  
             - ROSMAP_Bennett_Klein_glycoQTL_twas.*.univariate.bvsr.rds
         ROSMAP_sQTL: #syn70095523
-          export: #syn70095524
-          fine_mapping: #syn70095525
+          export: #syn75362851
+            batch{1..8}: #syn754273{48,50..56}
+              - ROSMAP_sQTL.*.cis_results_db.export.rds
+              - ROSMAP_sQTL.*.cis_results_db.export.rds.md5
+              - ROSMAP_sQTL.*.cis_results_db.export_sumstats.rds
+              - ROSMAP_sQTL.*.cis_results_db.export_sumstats.rds.md5
+              - ROSMAP_sQTL.*.pip_sum
+          fine_mapping: #syn75362741
+            batch{1..2}: #syn7542734{5..6}
+              - ROSMAP_sQTL.*.univariate_bvsr.rds
         STARNET_eQTL: #syn70090832
           export: #syn70095527
             batch{1..7}: #syn726677{15..21}
