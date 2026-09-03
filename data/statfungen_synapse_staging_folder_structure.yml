@@ -375,7 +375,9 @@ xQTL_GWAS_models: #syn69670588
               - ROSMAP_eQTL.*.pip_sum
           fine_mapping: #syn70095519
             batch{1..5}: #syn7266770{1..5}
-              -  ROSMAP_CUIMC1_eQTL.*.univariate.bvsr.rds
+              - ROSMAP_CUIMC1_eQTL.*.univariate.bvsr.rds
+              - ROSMAP_MIT_eQTL.*.univariate.bvsr.rds
+              - ROSMAP_mega_eQTL.*.univariate.bvsr.rds
         ROSMAP_pQTL: #syn70090831
           export: #syn70095521
             batch{1..7}: #syn726677{06..12}
