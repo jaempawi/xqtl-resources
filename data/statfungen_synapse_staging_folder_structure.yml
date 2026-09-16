@@ -468,11 +468,14 @@ xQTL_GWAS_models: #syn69670588
             - MSBB_sQTL.*.univariate_twas_weights.rds
         ROSMAP_eQTL: #syn72280606
           mega: #syn74907867
-            - RDS_files
+            batch{1..2}: #syn7542732{4..5}
+              - ROSMAP_mega_eQTL.*.univariate_twas_weights.rds
           MIT: #syn74908478
-            - RDS_files
+            batch{1..2}: #syn754273{29..30}
+            - ROSMAP_MIT_eQTL.*.univariate_susie_twas_weights.rds
           CUIMC1: #syn74908574
-            - RDS_files
+            batch{1..2}: #syn722806{09..10}
+            - ROSMAP_CUIMC1.*.univariate_twas_weights.rds
         ROSMAP_pQTL: #syn70090857
           batch{1..2}: #syn7154895{5..6}
             - ROSMAP_Bennett_Klein_pQTL.*.univariate_twas_weights.rds
@@ -486,9 +489,11 @@ xQTL_GWAS_models: #syn69670588
           - STARNET_eQTL.*.univariate_twas_weights.rds
       multi_context: #syn74907900
         ROSMAP_All: #syn74909252
-          - RDS_files
+          batch{1..2}: #syn7542733{1..2}
+            - ROSMAP_All.*.multicontext_twas_weights.rds
         MSBB_eQTL: #syn74907964
-          - RDS_files
+          batch{1..2}: #syn7542732{6..7}
+            - MSBB_eQTL.*.multicontext_twas_weights.rds
   AD_GWAS_models: #syn69670621
     AD_finemapping: #syn69670625
       susie_rss: #syn74957553
@@ -508,7 +513,8 @@ xQTL_GWAS_models: #syn69670588
     AD_colocalization: #syn69670626
       - RDS_files
     AD_TWAS_association: #syn74908416
-      - TSV_files
+      batch1: #syn75427328
+        - KNIGHT_eQTL_pQTL.*.twas.tsv.gz
   AD_xQTL_integration: #syn69670622
     AD_xQTL_colocalization_models: #syn69670630
       ROSMAP: #syn74986543
