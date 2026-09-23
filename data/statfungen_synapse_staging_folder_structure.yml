@@ -561,7 +561,14 @@ xQTL_GWAS_models: #syn69670588
 xQTL_data: #syn69670632
   xQTL_LR: #syn69670638
     R_lm_residual_sumstats: #syn69670640
-      - RDS_files
+      eQTL: #syn69670659
+        - RDS_files
+      glycoQTL: #syn69670661
+        - RDS_files
+      pQTL: #syn69670660
+        - RDS_files
+      sQTL: #syn69670662
+        - RDS_files
     tensorQTL_sumstats: #syn69670641
       - UCSC_bed.gz
   xQTL_QR: #syn69670643
