@@ -207,7 +207,7 @@ variant_gene_summary: #syn69865684
         - ROSMAP_glycoQTL_unadjusted_eQTL_summary_pv1e4.tsv
         - ROSMAP_pQTL_glycoQTL_adjusted_summary_pv1e4.tsv
         - ROSMAP_pQTL_glycoQTL_unadjusted_summary_pv1e4.tsv
-      trans_colocalization:
+      trans_colocalization: #syn77579916
         - xqtl_only_ROSMAP_transmap_colocboost_sorted.bed.gz
       pairwise_colocalization: #syn69865800
         bulk_mQTL_haQTL_AD: #syn69865801
