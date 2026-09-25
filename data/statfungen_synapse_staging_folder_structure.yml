@@ -340,9 +340,12 @@ xQTL_GWAS_models: #syn69670588
           fine_mapping: #syn75134502
             - MiGA_eQTL.*.univariate_bvsr.rds
         MSBB_eQTL: #syn70095508
-          export: #syn70095509
-          fine_mapping: #syn70095510
-            - MSBB_eQTL.*.univariate.bvsr.rds
+          export: #syn75362961
+            batch{1..10}: #syn754273{57,59..66,58}
+              - MSBB_eQTL.*.cis_results_db.export*.rds
+          fine_mapping: #syn75362684
+            batch{1..2}: #syn754273{43..44}
+              - MSBB_eQTL.*.univariate_bvsr.rds
         MSBB_pQTL: #syn70090821
           export: #syn70095512
             batch{1..5}: #syn726676{77..81}
