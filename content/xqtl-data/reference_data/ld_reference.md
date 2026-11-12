@@ -6,13 +6,27 @@ sample_size: 16571
 access: controlled
 status: staged
 release:
-synapse_ids: [syn53171227, syn69670651, syn69670652]
+synapse_ids: [syn53171227, syn75082260, syn69670651, syn69670652]
 lead_analysts: [Oluwatosin Olayinka]
 last_verified:
 ---
 
 # Non-Hispanic White Linkage Disequilibrium Reference Panel
 LD matrices calculated from whole genome sequencing data from 16571 non-Hispanic white individuals obtained from the Genome Center for Alzheimer's Disease (GCAD). Correlation matrices were calculated between SNPs within 1361 LD blocks which were obtained from [this Github page](https://github.com/jmacdon/LDblocks_GRCh38/) (generated from 1000 Genomes EUR samples).
+
+## Two versions
+
+This panel comes in two versions, both built from ADSP whole-genome sequencing of non-Hispanic white (EUR) individuals. They differ in what is stored.
+
+| | In-sample LD matrices | LD sketch |
+|---|---|---|
+| What it is | Correlation matrices computed directly from the individuals' genotypes, one per LD block | A small set of pseudo-samples made by multiplying the genotypes by a random matrix. LD between variants is kept, but no row is a real participant |
+| LD values | Exact for these samples | Approximate; SuSiE-RSS computes LD from the sketch when it runs |
+| Files | `.cor.xz` and `.cor.xz.bim` per LD block (see Output Format below) | PLINK2 `.pgen`, `.pvar`, `.psam` and `.afreq` per chromosome |
+| How it was made | [LD reference generation notebook](https://github.com/StatFunGen/xqtl-protocol/blob/main/code/SoS/graveyard/ld_reference_generation.ipynb) | [RSS LD sketch pipeline](https://statfungen.github.io/xqtl-protocol/rss-ld-sketch) |
+| Synapse | [syn53171227](https://www.synapse.org/Synapse:syn53171227) | [syn75082260](https://www.synapse.org/Synapse:syn75082260) |
+
+The sketch is available for ADSP R4 EUR only.
 
 ## Contact
 Oluwatosin Olayinka
